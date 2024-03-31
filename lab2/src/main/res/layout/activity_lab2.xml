@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/MainTitle"
+            android:layout_width="403dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Калькулятор расчета стоимости печати фотографий разного размера"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            tools:text="Калькулятор расчета стоимости печати фотографий разного размера" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="250dp"
+            android:layout_height="105dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/SizeWidth"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="4"
+                android:inputType="number"
+                android:text="4"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="X"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="48sp"
+                tools:text="X" />
+
+            <EditText
+                android:id="@+id/SizeHeight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="3"
+                android:inputType="number"
+                android:text="3"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="173dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Размер (см)"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp"
+            tools:text="Размер (см)" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="220dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:text="Колличество"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/Number"
+            android:layout_width="100dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="34sp" />
+
+        <CheckBox
+            android:id="@+id/СolorСorrectioncheckBox"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"
+            android:checked="false"
+            android:text="Цветокоррекция"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/textCalculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стоимость"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp"
+            tools:text="Стоимость" />
+
+        <TextView
+            android:id="@+id/CalculationResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            tools:text="0" />
+
+        <Button
+            android:id="@+id/Whrite"
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="36dp"
+            android:background="#8BC34A"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="16sp"
+            android:onClick="OnClickCalculation"
+            android:text="Рассчитать"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/Read"
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="36dp"
+            android:background="#8BC34A"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="16sp"
+            android:onClick="OnClickReadFile"
+            android:text="Прочитать файл"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
